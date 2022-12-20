@@ -46,6 +46,7 @@ const PatientChart: React.FC = () => {
             <ExtensionSlot extensionSlotName="breadcrumbs-slot" />
             <aside>
               <PatientBanner {...state} />
+              <ExtensionSlot state={state} extensionSlotName="top-of-all-patient-dashboards-slot" />
               <ExtensionSlot extensionSlotName="patient-info-slot" state={state} />
             </aside>
             <div className={styles.grid}>
