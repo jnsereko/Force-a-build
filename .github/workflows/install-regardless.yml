@@ -29,3 +29,7 @@ jobs:
 
       - name: check yarn version
         run: yarn -v
+
+      - name: create alternative lockfile
+        run: yarn lockfile generate --filename alternative-yarn.lock
+        
