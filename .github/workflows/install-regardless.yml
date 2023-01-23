@@ -27,5 +27,5 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies
-        run: yarn install -o alternative-yarn.lock
+      - name: check yarn version
+        run: yarn -v
